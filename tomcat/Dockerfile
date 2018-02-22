@@ -58,6 +58,7 @@ RUN mkdir -p /data/xnat/home/config
 WORKDIR /data/xnat/home
 
 RUN mkdir logs plugins work
+ADD plugins/*.jar /data/xnat/home/plugins/
 
 WORKDIR /data/xnat
 
